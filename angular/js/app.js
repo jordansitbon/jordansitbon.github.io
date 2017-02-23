@@ -1,10 +1,12 @@
 angular.module('app', [
 	'ui.bootstrap',
-	'ui.router'
+	'ui.router',
+	
+	'ngSvg'
 ])
 
 .constant('TPL_DIR', './angular/html/')
-.constant('SVG_PATH', '../lib/ngSvg/demo/svg/')
+.constant('SVG_PATH', './lib/ngSvg/demo/svg/')
 
 .run(function($state, $rootScope, TPL_DIR) {
 	$rootScope.tpl_dir = TPL_DIR;
@@ -38,7 +40,7 @@ angular.module('app', [
 	})
 
 	.state("app.svg", {
-		url: "",
+		url: "ng-svg",
 		views: {
 			"content": {
 				templateUrl: tpl_dir+"svg.html",

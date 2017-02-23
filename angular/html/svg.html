@@ -1,13 +1,13 @@
 <div class="col-sm-4">
 	<div class="form-group">
-		<label class="label-form">SVG</label>
+		<label>SVG</label>
 		<select class="form-control" ng-options="svg as svg.file for svg in svg_list track by svg.file" ng-model="svg_select"></select>
 	</div>
 	<div class="form-group" ng-repeat="(key,scope_el) in svg_select.formScope">
-		<label class="label-form">{{scope_el.label}}</label>
+		<label>{{scope_el.label}}</label>
 		<input class="form-control" ng-model="svg_select.scope[key]" />
 	</div>
 </div>
-<div class="col-sm-8">
+<div class="col-sm-8 text-center" style="margin-top: 50px;">
 	<ng-svg svg-template="svg_select.file" svg-scope="svg_select.scope"></ng-svg>
 </div>
