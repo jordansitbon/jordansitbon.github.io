@@ -1,0 +1,29 @@
+{
+  "name": "ngSvg",
+  "homepage": "http://www.lours-geek.com/",
+  "authors": [
+    "Jordan SITBON - l'Ours Geek"
+  ],
+  "description": "ngSvg compile SVG image or icon with AngularJS template engine.",
+  "keywords": [
+    "js",
+    "svg",
+    "angular",
+    "template"
+  ],
+  "dependencies": {
+    "angular": "1.*"
+  },
+  "main": "dist/ngSvg.js",
+  "license": "MIT",
+  "_release": "766a47ce2f",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "766a47ce2f3bed93122e00373bee217d43d3d174"
+  },
+  "_source": "https://github.com/jordansitbon/ngSvg.git",
+  "_target": "*",
+  "_originalSource": "ngSvg",
+  "_direct": true
+}
